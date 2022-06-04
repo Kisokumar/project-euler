@@ -16,4 +16,4 @@ def sol(z):
 
 print(sol(4000000))
 
-ans = 4613732
+# ans = 4613732
