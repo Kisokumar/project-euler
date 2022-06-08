@@ -1,4 +1,4 @@
-# Multiples of 3 or 5
+# Problem 1 - Multiples of 3 or 5
 # Find sum of all multiples of 3 or 5 below 1000
 
 def sol(x):
@@ -6,8 +6,8 @@ def sol(x):
     for i in range(x):
         if i%5==0 or i%3==0:
             ans+=i
-    print(ans)
+    return ans
 
-sol(1000)
+print(sol(1000))
 
 # ans = 233168
