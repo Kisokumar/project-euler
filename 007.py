@@ -42,8 +42,7 @@ class sol:
                 c*=10
             else:
                 print(sol.sieve(c)[n-1])
-                break
-    
+                found = True    
 
 if __name__ == '__main__':
     sol(10001)
