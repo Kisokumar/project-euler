@@ -4,11 +4,6 @@
 def sol():
     ans = 0
 
-
-
-
-
-
     return ans
 
 if __name__ == '__main__':
