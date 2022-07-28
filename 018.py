@@ -18,15 +18,14 @@ triangle = [
   [63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
   [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]]
 
+def sol(paths):
+    for i in range(len(paths)-1, 0, -1):
+        for j in range(len(paths[i])-1):
+            paths[i-1][j] += max(paths[i][j], paths[i][j+1])
 
-print(triangle)
-
-def sol():
-    ans = 0
-
-    return ans
+    return paths[0][0]
 
 if __name__ == '__main__':
-    print(sol())
+    print(sol(triangle))
 
-# ans = 0
+# ans = 1074
