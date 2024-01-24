@@ -1,7 +1,8 @@
 # Problem 5 - Smallest multiple 
 # Smallest possible number that is evenly divisible by all of the numbers from 1 to 20
+import numpy as np
 
-def sol():
+def brute():
     nums = [i for i in range(1,21)]
     ans = 1
     found = False
@@ -15,6 +16,13 @@ def sol():
         if correct:
             found=True
             print(ans)
+
+def sol():
+    nums = range(1, 21)
+    lcm = nums[0]
+    for i in range(1, len(nums)):
+        lcm = np.lcm(lcm, nums[i])
+    print(lcm)
 
 sol()
 
